@@ -1,0 +1,6 @@
+# 为内核配置系统提供选项（需在内核配置时包含此文件）
+config MY_DRIVER
+    tristate "My Custom Device Driver"
+    default n
+    help
+      This is a sample out-of-tree driver for demonstration.
