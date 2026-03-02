@@ -201,7 +201,7 @@ static int hw_module_detector_probe(struct platform_device *pdev)
     read_hw_module_reg(detector);
 
     /* 创建sysfs类和设备 */
-    detector->hw_class = class_create("hw_module");
+    detector->hw_class = class_create(THIS_MODULE, "hw_module");
     if (IS_ERR(detector->hw_class)) {
         dev_err(dev, "无法创建sysfs类\n");
         return PTR_ERR(detector->hw_class);
