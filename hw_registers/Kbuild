@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 
-# 定义目标模块名称
+hw_registers-objs := src/hw_registers.o
 
-obj-m += src/hw_registers.o
+obj-$(CONFIG_HW_REGISTERS) += hw_registers.o
 
