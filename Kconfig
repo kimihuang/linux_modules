@@ -4,5 +4,6 @@ menu "Quantum Drivers"
 
 source "drivers/modules/hw_registers/Kconfig"
 source "drivers/modules/my_driver/Kconfig"
+source "drivers/modules/memmap/Kconfig"
 
 endmenu

@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+memmap-objs := src/memmap.o
+
+obj-$(CONFIG_MEMMAP_MODULE) += memmap.o

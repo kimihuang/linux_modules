@@ -2,3 +2,4 @@
 
 obj-$(CONFIG_HW_REGISTERS) += hw_registers/
 obj-$(CONFIG_MY_DRIVER) += my_driver/
+obj-$(CONFIG_MEMMAP_MODULE) += memmap/
