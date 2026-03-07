@@ -203,9 +203,9 @@ static int memmap_device_create(unsigned long size, phys_addr_t phys_addr, int i
     dev->index = index;
     spin_lock_init(&dev->lock);
 
-    /* Map physical memory */
+    /* Map physical memory with write-combining (uncached) */
     pr_info("Remapping physical memory 0x%pa -> virtual\n", &phys_addr);
-    dev->data = ioremap_cache(phys_addr, size);
+    dev->data = ioremap_wc(phys_addr, size);
     if (!dev->data) {
         pr_err("Failed to remap physical memory 0x%pa\n", &phys_addr);
         ret = -ENOMEM;

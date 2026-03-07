@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+config DEMO_MODULE
+    tristate "Quantum Demo module Driver"
+    depends on ARM64
+    default m
+    help
+      This driver provides buildroot pacakge build demo
+
