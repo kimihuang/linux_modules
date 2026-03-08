@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+config MEMMAP_MODULE
+    tristate "Quantum Memmap Memory Driver"
+    depends on ARM64
+    default m
+    help
+      This driver provides block device access to reserved memory regions.
+      It can map physical memory ranges as block devices for use as
+      temporary storage (e.g., memdisk at 0x78000000).
+
+      Select this to build the memmap driver as a module (m) or built-in (y).
+
+      Usage:
+        insmod memmap.ko memmap=256M\$0x78000000
+        mount /dev/memblock0 /mnt/memdisk

@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+config HW_REGISTERS
+    tristate "Quantum Hardware Registers Driver"
+    depends on ARM64
+    default m
+    help
+      This is a sample driver for hardware register access.
+      Select this to build the Quantum hardware registers driver
+      as a module (m) or built-in (y).

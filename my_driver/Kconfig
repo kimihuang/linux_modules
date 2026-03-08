@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+config MY_DRIVER
+    tristate "Quantum My Device Driver"
+    depends on ARM64
+    default m
+    help
+      This is a sample custom device driver.
+      Select this to build the Quantum my device driver
+      as a module (m) or built-in (y).

@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+menu "Quantum Drivers"
+
+source "drivers/modules/hw_registers/Kconfig"
+source "drivers/modules/my_driver/Kconfig"
+
+endmenu
