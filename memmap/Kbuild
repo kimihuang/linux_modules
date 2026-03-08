@@ -2,4 +2,4 @@
 
 memmap-objs := src/memmap.o
 
-obj-$(CONFIG_MEMMAP_MODULE) += memmap.o
+obj-m += memmap.o
